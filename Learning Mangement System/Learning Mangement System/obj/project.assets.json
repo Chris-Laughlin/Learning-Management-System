@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Library.LearningMangementSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Library.LearningMangementSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Library.LearningMangementSystem.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Library.LearningMangementSystem/1.0.0": {
+      "type": "project",
+      "path": "../Library.LearningMangementSystem/Library.LearningMangementSystem.csproj",
+      "msbuildProject": "../Library.LearningMangementSystem/Library.LearningMangementSystem.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Library.LearningMangementSystem >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\200795065\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\200795065\\Desktop\\Learning-Management-System\\Learning Mangement System\\Library.LearningMangementSystem\\Library.LearningMangementSystem.csproj": {
+              "projectPath": "C:\\Users\\200795065\\Desktop\\Learning-Management-System\\Learning Mangement System\\Library.LearningMangementSystem\\Library.LearningMangementSystem.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
