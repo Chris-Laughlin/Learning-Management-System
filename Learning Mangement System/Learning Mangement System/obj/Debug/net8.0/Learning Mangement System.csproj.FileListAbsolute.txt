@@ -17,3 +17,22 @@ C:\Users\200795065\Desktop\Learning-Management-System\Learning Mangement System\
 C:\Users\200795065\Desktop\Learning-Management-System\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.csproj.AssemblyReference.cache
 C:\Users\200795065\Desktop\Learning-Management-System\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.sourcelink.json
 C:\Users\200795065\Desktop\Learning-Management-System\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.csproj.CopyComplete
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\bin\Debug\net8.0\Learning Mangement System.exe
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\bin\Debug\net8.0\Learning Mangement System.deps.json
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\bin\Debug\net8.0\Learning Mangement System.runtimeconfig.json
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\bin\Debug\net8.0\Learning Mangement System.dll
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\bin\Debug\net8.0\Learning Mangement System.pdb
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\bin\Debug\net8.0\Library.LearningMangementSystem.dll
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\bin\Debug\net8.0\Library.LearningMangementSystem.pdb
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.csproj.AssemblyReference.cache
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.AssemblyInfoInputs.cache
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.AssemblyInfo.cs
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.csproj.CoreCompileInputs.cache
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.sourcelink.json
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.csproj.CopyComplete
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.dll
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\refint\Learning Mangement System.dll
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.pdb
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.genruntimeconfig.cache
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\ref\Learning Mangement System.dll

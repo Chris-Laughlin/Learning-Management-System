@@ -7,11 +7,17 @@
 
         public Dictionary<int, double> Grades { get; set; }
 
-        public char CLassification { get; set; }
+        public string? Classification { get; set; }
 
         public Person()
         {
+
             Grades = new Dictionary<int, double>();
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} - {Classification}";
         }
     }
 }

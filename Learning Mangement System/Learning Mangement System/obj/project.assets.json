@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\200795065\\Desktop\\Learning-Management-System\\Learning Mangement System\\Learning Mangement System\\Learning Mangement System.csproj",
+      "projectUniqueName": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\Learning Mangement System.csproj",
       "projectName": "Learning Mangement System",
-      "projectPath": "C:\\Users\\200795065\\Desktop\\Learning-Management-System\\Learning Mangement System\\Learning Mangement System\\Learning Mangement System.csproj",
+      "projectPath": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\Learning Mangement System.csproj",
       "packagesPath": "C:\\Users\\200795065\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\200795065\\Desktop\\Learning-Management-System\\Learning Mangement System\\Learning Mangement System\\obj\\",
+      "outputPath": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\200795065\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\200795065\\Desktop\\Learning-Management-System\\Learning Mangement System\\Library.LearningMangementSystem\\Library.LearningMangementSystem.csproj": {
-              "projectPath": "C:\\Users\\200795065\\Desktop\\Learning-Management-System\\Learning Mangement System\\Library.LearningMangementSystem\\Library.LearningMangementSystem.csproj"
+            "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Library.LearningMangementSystem\\Library.LearningMangementSystem.csproj": {
+              "projectPath": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Library.LearningMangementSystem\\Library.LearningMangementSystem.csproj"
             }
           }
         }
