@@ -7,6 +7,8 @@
 
         public Dictionary<int, double> Grades { get; set; }
 
+        public List<Course> enrolledCourses { get; set; }
+
         public string? Classification { get; set; }
 
         public Person()

@@ -10,7 +10,7 @@
         public List<Module> Modules { get; set; }
 
         public Course() {
-            Roster = new List<Person> { };
+            Roster = new List<Person>();
             Assignments = new List<Assignment>();
             Modules = new List<Module>();
         }
