@@ -30,9 +30,9 @@ C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Le
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.AssemblyInfo.cs
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.csproj.CoreCompileInputs.cache
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.sourcelink.json
-C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.csproj.CopyComplete
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.dll
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\refint\Learning Mangement System.dll
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.pdb
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning Mangement System.genruntimeconfig.cache
 C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\ref\Learning Mangement System.dll
+C:\Users\200795065\Desktop\LearningManagementSystem\Learning Mangement System\Learning Mangement System\obj\Debug\net8.0\Learning.A8C83E19.Up2Date
