@@ -9,7 +9,6 @@ namespace Learning_Mangement_System.Helpers
 {
     internal class StudentHelper
     {
-        private List<Person> students = new List<Person>();
         public void createStudent()
         {
             Console.WriteLine("Enter Student name: ");

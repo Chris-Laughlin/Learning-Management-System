@@ -4,6 +4,8 @@ namespace MAUI.learningManagement
 {
     public static class MauiProgram
     {
+        public static object NavigationManager { get; internal set; }
+
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();

@@ -3,12 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI.learningManagement.Views.InstructorView"
              Title="InstructorView">
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="30">
         <Label 
             Text="Instructor View"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
+        <Button
+            Text="Add Student"
+            Clicked="AddStudentClicked"/>
+
+        <Button
+            Text="Add Course"
+            Clicked="AddCourseClicked"/>
+
+        <Button
+            Text="Add Student to Course"
+            Clicked="AddStudentToCourseClicked"/>
+        
         <Button
             Text="Back"
             Clicked="BackClicked"/>

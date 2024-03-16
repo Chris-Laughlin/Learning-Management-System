@@ -22,7 +22,21 @@
         Title="Student"
         ContentTemplate="{DataTemplate local2:StudentView}"
         Route="StudentView" />
+    <ShellContent
+        Title="AddStudent"
+        ContentTemplate="{DataTemplate local2:AddStudent}"
+        Route="AddStudent" />
 
-    
+    <ShellContent
+        Title="AddCourse"
+        ContentTemplate="{DataTemplate local2:AddCourse}"
+        Route="AddCourse" />
+
+    <ShellContent
+        Title="AddStudentToCourse"
+        ContentTemplate="{DataTemplate local2:AddStudentToCourse}"
+        Route="AddStudentToCourse" />
+
+
 
 </Shell>

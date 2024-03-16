@@ -33,9 +33,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\Learning Mangement System.csproj",
-      "projectName": "Learning Mangement System",
-      "projectPath": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\Learning Mangement System.csproj",
+      "projectUniqueName": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\Learning Management System.csproj",
+      "projectName": "Learning Management System",
+      "projectPath": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\Learning Management System.csproj",
       "packagesPath": "C:\\Users\\200795065\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\200795065\\Desktop\\LearningManagementSystem\\Learning Mangement System\\Learning Mangement System\\obj\\",
       "projectStyle": "PackageReference",

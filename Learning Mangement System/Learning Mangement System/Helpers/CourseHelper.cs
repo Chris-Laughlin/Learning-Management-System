@@ -10,7 +10,6 @@ namespace Learning_Mangement_System.Helpers
 {
     public class CourseHelper
     {
-        private List<Course> courses = new List<Course>();
         public void CreateCourse()
         {
             Console.WriteLine("Enter Course Code: ");
