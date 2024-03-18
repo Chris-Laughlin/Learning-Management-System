@@ -1,0 +1,77 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MAUI.learningManagement
+build_property.ProjectDir = C:\Users\200795065\Desktop\Canvas\Learning-Management-System\Learning Mangement System\MAUI.learningManagement\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/AddCourse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.AddCourse.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddCourse.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddCourse.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/AddStudent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.AddStudent.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddStudent.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddStudent.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/AddStudentToCourse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.AddStudentToCourse.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddStudentToCourse.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddStudentToCourse.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/InstructorView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.InstructorView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InstructorView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InstructorView.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/StudentView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.StudentView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\StudentView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\StudentView.xaml

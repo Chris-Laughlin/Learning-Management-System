@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.learningManagement.Views.AddCourse"
+             Title="AddCourse"
+             NavigatedFrom="OnLeaving"
+             NavigatedTo="OnArriving">
+    <VerticalStackLayout Spacing="30">
+        <Label 
+            Text="Add Course"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Course Name" />
+        <Entry Text="{Binding Path=courseName, Mode=TwoWay}"></Entry>
+
+        <Label Text="Course ID" />
+        <Entry Text="{Binding Path=courseId, Mode=TwoWay}"></Entry>
+
+        <Label Text="Course Description" />
+        <Entry Text="{Binding Path=courseDescription, Mode=TwoWay}"></Entry>
+
+        <Button
+            Text="Ok"
+            Clicked="OkClicked"/>
+        <Button
+            Text="Back"
+            Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>
