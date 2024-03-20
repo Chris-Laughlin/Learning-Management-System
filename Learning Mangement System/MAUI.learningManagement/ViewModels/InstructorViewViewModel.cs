@@ -7,22 +7,28 @@ using System.ComponentModel;
 using System.Collections.ObjectModel;
 using Library.LearningMangementSystem.models;
 using Library.LearningMangementSystem.Services;
+using System.Diagnostics;
 using System.Threading.Tasks;
+
 
 namespace MAUI.learningManagement.ViewModels
 {
     public class InstructorViewViewModel: INotifyPropertyChanged
     {
+        int count = 0;
         public ObservableCollection<Person> Student
         {
             get
             {
+                Debug.WriteLine("Getting STUDENT PLEASEEEEE " + count);
+                count++;
                 return new ObservableCollection<Person>(StudentService.Current.students);
             }
         }
+
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void NotifyPropertyChanged([CallerMemberName] string propertyName="")
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName="")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
@@ -34,6 +40,7 @@ namespace MAUI.learningManagement.ViewModels
 
         public void RefreshView()
         {
+            Debug.WriteLine("Refreshing");
             NotifyPropertyChanged(nameof(Student));
         }
     }

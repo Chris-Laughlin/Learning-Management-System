@@ -18,7 +18,7 @@ namespace Library.LearningMangementSystem.Services
                 return new StudentService();
             }
         }
-        public IEnumerable<Person?> students
+        public IEnumerable<Person> students
         {
             get
             {

@@ -45,8 +45,6 @@ public partial class AddStudent : ContentPage
         }
 
         StudentService.Current.createStudent(context.Name, classification);
-        context.Name = string.Empty;
-        context.ClassificationString = string.Empty;
         Shell.Current.GoToAsync("//InstructorView");
     }
     private void BackClicked(object sender, EventArgs e)

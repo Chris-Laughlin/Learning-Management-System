@@ -19,7 +19,7 @@ namespace Library.LearningMangementSystem.Services
                 return new CourseService();
             }
         }
-        public IEnumerable<Course?> courses
+        public IEnumerable<Course> courses
         {
             get
             {
@@ -130,28 +130,26 @@ namespace Library.LearningMangementSystem.Services
             Console.WriteLine("No courses found");
         }
 
-        public void addToRoster(Person person)
+        public void addToRoster(Person person, Course courseName)
         {
-            Console.WriteLine("Enter Course Name");
-            var courseName = Console.ReadLine();
             for (int i = 0; i < FakeDatabase.Courses.Count; i++)
             {
-                if (FakeDatabase.Courses[i].Name == courseName)
+                if (FakeDatabase.Courses[i].Name == courseName.Name)
                 {
                     FakeDatabase.Courses[i].Roster.Add(person);
                     //person.enrolledCourses.Add(courses[i]);
-                    Console.WriteLine("Student Added Successfully!!");
+                    Debug.WriteLine("Student Added Successfully!!");
 
-                    Console.WriteLine($"Roster for {FakeDatabase.Courses[i].Name} after adding {person.Name}:");
+                    Debug.WriteLine($"Roster for {FakeDatabase.Courses[i].Name} after adding {person.Name}:");
                     foreach (var student in FakeDatabase.Courses[i].Roster)
                     {
-                        Console.WriteLine($"- {student.Name}");
+                        Debug.WriteLine($"- {student.Name}");
                     }
 
                     return; // Assuming you want to exit the method after adding the person
                 }
             }
-            Console.WriteLine("No Course Found.");
+            Debug.WriteLine("No Course Found.");
 
         }
 
@@ -228,6 +226,11 @@ namespace Library.LearningMangementSystem.Services
                     Console.WriteLine($"- {course.Name}");
                 }
             }
+        }
+
+        public void createModule(string moduleName, string moduleDescription)
+        {
+
         }
 
 

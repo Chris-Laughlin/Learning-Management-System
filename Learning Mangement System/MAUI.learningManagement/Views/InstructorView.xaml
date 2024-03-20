@@ -11,9 +11,6 @@
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <ListView ItemsSource="{Binding Student}">
-            
-        </ListView>
 
         <Button
             Text="Add Student"
@@ -26,6 +23,9 @@
         <Button
             Text="Add Student to Course"
             Clicked="AddStudentToCourseClicked"/>
+        <Button
+            Text="Remove Student From Course"
+            Clicked="RemoveStudentFromRosterClicked"/>
 
         <Button
             Text="Back"

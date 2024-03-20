@@ -2,14 +2,38 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI.learningManagement.Views.AddStudentToCourse"
-             Title="AddStudentToCourse">
-    <VerticalStackLayout>
+             Title="AddStudentToCourse"
+             NavigatedTo="ContentPage_NavigateTo">
+    <VerticalStackLayout Spacing="10">
         <Label 
             Text="Add Student To Course"
+            FontSize="20"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+            <Label 
+            Text="Students"
+            FontSize="18"
+            Margin="0,10,0,0"/>
+
+        <ListView ItemsSource="{Binding Student}"
+                  SelectedItem="{Binding SelectedPerson, Mode=TwoWay}">
+        </ListView>
+
+        <Label 
+            Text="Course"
+            FontSize="18"
+            Margin="0,10,0,0"/>
+
+        <ListView ItemsSource="{Binding Course}"
+                  SelectedItem="{Binding SelectedCourse, Mode=TwoWay}">
+        </ListView>
+
         <Button
-            Text="Back"
-            Clicked="BackClicked"/>
+            Text="Add Student to Course"
+            Clicked="AddStudentToCourseClicked"/>
+
+        <Button
+                Text="Back"
+                Clicked="AddStudentToCourseClicked"/>
     </VerticalStackLayout>
 </ContentPage>

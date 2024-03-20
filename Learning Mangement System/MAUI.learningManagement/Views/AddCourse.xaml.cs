@@ -33,9 +33,6 @@ public partial class AddCourse : ContentPage
         courseDescription = context.courseDescription;
 
         CourseService.Current.CreateCourse(courseName, courseId, courseDescription);
-        context.courseName = string.Empty;
-        context.courseId = string.Empty;
-        context.courseDescription = string.Empty;
         CourseService.Current.listAllCourses();
         Shell.Current.GoToAsync("//InstructorView");
     }
