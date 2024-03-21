@@ -31,10 +31,18 @@ namespace MAUI.learningManagement.Views
         {
             Shell.Current.GoToAsync("//AddStudentToCourse");
         }
-
-        private void RemoveStudentFromCourseClicked(object sender, EventArgs e)
+        private void RemoveStudentClicked(object sender, EventArgs e)
         {
             Shell.Current.GoToAsync("//RemoveStudentFromRoster");
+        }
+        private void AddModuleClicked(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("//AddModuleToCourse");
+        }
+
+        private void AddAssignmentClicked(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("//AddAssignmentToCourse");
         }
 
         private void ContentPage_NavigateTo(object sender, NavigationEventArgs e)

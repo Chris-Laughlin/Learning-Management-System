@@ -90,22 +90,21 @@ namespace Library.LearningMangementSystem.Services
         {
             if (FakeDatabase.Courses.Count < 0)
             {
-                Console.WriteLine("No Courses Found");
+                Debug.WriteLine("No Courses Found");
                 return;
             }
-            Console.WriteLine("Find course by Name or Description?");
+            Debug.WriteLine("Find course by Name or Description?");
             var method = Console.ReadLine();
             if (method == "Name")
             {
-                Console.WriteLine("Enter Course Name");
+                Debug.WriteLine("Enter Course Name");
                 var courseName = Console.ReadLine();
                 for (int i = 0; i < FakeDatabase.Courses.Count; i++)
                 {
                     if (FakeDatabase.Courses[i].Name == courseName)
                     {
-                        Console.WriteLine("Course Found!!");
-                        Console.WriteLine();
-                        Console.WriteLine($"{i + 1}. Code: {FakeDatabase.Courses[i].Code}, Name: {FakeDatabase.Courses[i].Name}, Description: {FakeDatabase.Courses[i].Description}");
+                        Debug.WriteLine("Course Found!!");
+                        Debug.WriteLine($"{i + 1}. Code: {FakeDatabase.Courses[i].Code}, Name: {FakeDatabase.Courses[i].Name}, Description: {FakeDatabase.Courses[i].Description}");
                         return;
                     }
                 }
@@ -113,21 +112,20 @@ namespace Library.LearningMangementSystem.Services
             }
             else if (method == "Description")
             {
-                Console.WriteLine("Enter Course Description");
+                Debug.WriteLine("Enter Course Description");
                 var courseDescription = Console.ReadLine();
                 for (int i = 0; i < FakeDatabase.Courses.Count; i++)
                 {
                     if (FakeDatabase.Courses[i].Description == courseDescription)
                     {
-                        Console.WriteLine("Course Found!!");
-                        Console.WriteLine();
-                        Console.WriteLine($"{i + 1}. Code: {FakeDatabase.Courses[i].Code}, Name: {FakeDatabase.Courses[i].Name}, Description: {FakeDatabase.Courses[i].Description}");
+                        Debug.WriteLine("Course Found!!");
+                        Debug.WriteLine($"{i + 1}. Code: {FakeDatabase.Courses[i].Code}, Name: {FakeDatabase.Courses[i].Name}, Description: {FakeDatabase.Courses[i].Description}");
                         return;
                     }
                 }
 
             }
-            Console.WriteLine("No courses found");
+            Debug.WriteLine("No courses found");
         }
 
         public void addToRoster(Person person, Course courseName)
@@ -153,51 +151,41 @@ namespace Library.LearningMangementSystem.Services
 
         }
 
-        public void removeFromRoster(Person person)
+        public void removeFromRoster(Person person, Course courseName)
         {
-            Console.WriteLine("Enter Course Name");
-            var courseName = Console.ReadLine();
             for (int i = 0; i < FakeDatabase.Courses.Count; i++)
             {
-                if (FakeDatabase.Courses[i].Name == courseName)
+                if (FakeDatabase.Courses[i].Name == courseName.Name)
                 {
                     foreach (var student in FakeDatabase.Courses[i].Roster)
                     {
                         if (student == person)
                         {
                             FakeDatabase.Courses[i].Roster.Remove(person);
-                            Console.WriteLine("Student Removed Successfully!!");
+                            Debug.WriteLine("Student Removed Successfully!!");
 
-                            Console.WriteLine($"Roster for {FakeDatabase.Courses[i].Name} after Removing {person.Name}:");
+                            Debug.WriteLine($"Roster for {FakeDatabase.Courses[i].Name} after Removing {person.Name}:");
                             foreach (var students in FakeDatabase.Courses[i].Roster)
                             {
-                                Console.WriteLine($"- {students.Name}");
+                                Debug.WriteLine($"- {students.Name}");
                             }
 
                             return; // Assuming you want to exit the method after adding the person
                         }
                     }
-                    Console.WriteLine("Student Not in Course");
+                    Debug.WriteLine("Student Not in Course");
                     return;
                 }
             }
-            Console.WriteLine("No Course Found.");
+            Debug.WriteLine("No Course Found.");
         }
 
-        public void createAssignment()
+        public void createAssignment(Course courseName, string assignmentName, string assignmentDescription, string totalPoints)
         {
-            Console.WriteLine("Enter Course you want to create Assignment for.");
-            var courseName = Console.ReadLine();
             foreach (var course in FakeDatabase.Courses)
             {
-                if (course.Name == courseName)
+                if (course.Name == courseName.Name)
                 {
-                    Console.WriteLine("Enter Assignment Name");
-                    var assignmentName = Console.ReadLine();
-                    Console.WriteLine("Enter Assignment Description");
-                    var assignmentDescription = Console.ReadLine();
-                    Console.WriteLine("Enter Total Available points");
-                    var totalPoints = Console.ReadLine();
                     var assignment = new Assignment()
                     {
                         Name = assignmentName,
@@ -206,33 +194,62 @@ namespace Library.LearningMangementSystem.Services
                         DueDate = DateTime.Now
                     };
                     course.Assignments.Add(assignment);
-                    Console.WriteLine("Assignment Added Successfully");
+                    Debug.WriteLine($"Assignment Added Successfully to course '{courseName.Name}'");
                     for (int i = 0; i < course.Assignments.Count; i++)
                     {
-                        Console.WriteLine($"{i + 1}. Assignment Name: {course.Assignments[i].Name}, Description: {course.Assignments[i].Description}, Total Points: {course.Assignments[i].TotalAvailablePoints}, Due Date: {course.Assignments[i].DueDate}");
+                        Debug.WriteLine($"{i + 1}. Assignment Name: {course.Assignments[i].Name}, Description: {course.Assignments[i].Description}, Total Points: {course.Assignments[i].TotalAvailablePoints}, Due Date: {course.Assignments[i].DueDate}");
                     }
                     return;
                 }
             }
-            Console.WriteLine("No course Found");
+            Debug.WriteLine("No course Found");
         }
 
-        public void studentCourses(Person person)
+        public List<Course> studentCourses(Person person)
         {
+            var temp = new List<Course>();
             foreach (var course in FakeDatabase.Courses)
             {
                 if (course.Roster.Contains(person))
                 {
-                    Console.WriteLine($"- {course.Name}");
+                    temp.Add(course);
+                    Debug.WriteLine($"- {course.Name}");
                 }
             }
+            return temp;
         }
 
-        public void createModule(string moduleName, string moduleDescription)
+        public void AddModule(Course courseName, string moduleName, string moduleDescription)
         {
+            for (int i = 0; i < FakeDatabase.Courses.Count; i++)
+            {
+                if (FakeDatabase.Courses[i].Name == courseName.Name)
+                {
+                    var module = new Module()
+                    {
+                        Name = moduleName,
+                        Descrition = moduleDescription,
+                    };
 
+                    // Print course and module information for debugging
+                    Debug.WriteLine($"Adding module '{moduleName}' to course '{courseName.Name}' with description '{moduleDescription}'");
+
+                    FakeDatabase.Courses[i].Modules.Add(module);
+                    FakeDatabase.Courses[i].Modules[i].addNewContent();
+
+                    // Print all modules in the course
+                    Debug.WriteLine($"Modules in course '{courseName.Name}':");
+                    foreach (var mod in FakeDatabase.Courses[i].Modules)
+                    {
+                        Debug.WriteLine($"Module: {mod.Name}, Description: {mod.Descrition}");
+                    }
+                    return;
+                }
+            }
+
+            // Print error message if no course is found
+            Debug.WriteLine("No Course Found.");
         }
-
 
     }
 }

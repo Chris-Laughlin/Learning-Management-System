@@ -40,7 +40,7 @@ namespace MAUI.learningManagement.ViewModels
 
         public void RefreshView()
         {
-            Debug.WriteLine("Refreshing");
+            Debug.WriteLine("Refreshing Instructor View");
             NotifyPropertyChanged(nameof(Student));
         }
     }

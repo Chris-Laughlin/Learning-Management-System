@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.learningManagement.Views.AddModuleToCourse"
+             Title="AddModuleToCourse">
+    <VerticalStackLayout Spacing="10">
+        <Label 
+            Text="Add Module To Course"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            Text="Courses"
+            FontSize="18"
+            Margin="0,10,0,0"/>
+
+        <ListView ItemsSource="{Binding Course}"
+          SelectedItem="{Binding SelectedCourse, Mode=TwoWay}">
+        </ListView>
+
+        <Label 
+            Text="Module Name"
+            FontSize="18"
+            Margin="0,10,0,0"/>
+        <Entry Text="{Binding Path=moduleName, Mode=TwoWay}"></Entry>
+
+        <Label 
+            Text="Module Description"
+            FontSize="18"
+            Margin="0,10,0,0"/>
+        <Entry Text="{Binding Path=moduleDescription, Mode=TwoWay}"></Entry>
+
+        <Button
+            Text="Add Module"
+            Clicked="AddModuleClicked"/>
+
+        <Button
+            Text="Back"
+            Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

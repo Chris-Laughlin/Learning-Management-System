@@ -23,9 +23,18 @@
         <Button
             Text="Add Student to Course"
             Clicked="AddStudentToCourseClicked"/>
+
         <Button
-            Text="Remove Student From Course"
-            Clicked="RemoveStudentFromRosterClicked"/>
+            Text="Remove Student From Roster"
+            Clicked="RemoveStudentClicked"/>
+        
+        <Button
+            Text="Add Module to Course"
+            Clicked="AddModuleClicked"/>
+
+        <Button
+            Text="Add Assignment to Course"
+            Clicked="AddAssignmentClicked"/>
 
         <Button
             Text="Back"

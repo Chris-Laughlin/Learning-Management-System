@@ -12,7 +12,6 @@ public partial class AddStudentToCourse : ContentPage
     }
     private void AddStudentToCourseClicked(object sender, EventArgs e)
     {
-        var context = BindingContext as AddStudentToCourseViewModel;
         (BindingContext as AddStudentToCourseViewModel)?.AddStudentClick();
         Shell.Current.GoToAsync("//InstructorView");
     }
@@ -44,7 +43,7 @@ public partial class RemoveStudentFromRosterView : ContentPage
     private void AddStudentToCourseClicked(object sender, EventArgs e)
     {
         var context = BindingContext as RemoveStudentFromRosterViewModel;
-        (BindingContext as RemoveStudentFromRosterViewModel)?.AddStudentClick();
+        (BindingContext as RemoveStudentFromRosterViewModel)?.RemoveStudentClick();
         Shell.Current.GoToAsync("//InstructorView");
     }
 
@@ -60,8 +59,7 @@ public partial class RemoveStudentFromRosterView : ContentPage
     }
 }*/
 
-
-/*<? xml version="1.0" encoding="utf-8" ?>
+/* <? xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns = "http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI.learningManagement.Views.RemoveStudentFromRosterView"

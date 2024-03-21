@@ -15,6 +15,11 @@
             Modules = new List<Module>();
         }
 
+        public void addContent(ContentItem item)
+        {
+            
+        }
+
         public override string ToString()
         {
             return $"{Code} - {Name} - {Description}";

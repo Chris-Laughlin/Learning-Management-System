@@ -14,13 +14,10 @@ namespace MAUI.learningManagement.ViewModels
 {
     public class AddStudentToCourseViewModel
     {
-        int count = 0;
         public ObservableCollection<Person> Student
         {
             get
             {
-                Debug.WriteLine("Getting STUDENT PLEASEEEEE " + count);
-                count++;
                 return new ObservableCollection<Person>(StudentService.Current.students);
             }
         }
@@ -32,8 +29,6 @@ namespace MAUI.learningManagement.ViewModels
         {
             get
             {
-                Debug.WriteLine("Getting Course PLEASEEEEE " + count);
-                count++;
                 return new ObservableCollection<Course>(CourseService.Current.courses);
             }
         }
@@ -61,7 +56,7 @@ namespace MAUI.learningManagement.ViewModels
 
         public void RefreshView()
         {
-            Debug.WriteLine("Refreshing");
+            Debug.WriteLine("Refreshing Add Student");
             NotifyPropertyChanged(nameof(Student));
             NotifyPropertyChanged(nameof(Course));
         }

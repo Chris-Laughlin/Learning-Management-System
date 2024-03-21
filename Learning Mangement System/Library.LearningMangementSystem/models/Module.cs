@@ -17,5 +17,16 @@ namespace Library.LearningMangementSystem.models
         public Module() { 
             Content = new List<ContentItem>();
         }
+
+        public void addNewContent()
+        {
+            var content = new ContentItem()
+            {
+                Name = "",
+                Description = "",
+                Path = "",
+            };
+            Content.Add(content);
+        }
     }
 }

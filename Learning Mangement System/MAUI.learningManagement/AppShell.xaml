@@ -37,6 +37,19 @@
         ContentTemplate="{DataTemplate local2:AddStudentToCourse}"
         Route="AddStudentToCourse" />
 
+    <ShellContent
+        Title="RemoveStudentFromRoster"
+        ContentTemplate="{DataTemplate local2:RemoveStudentFromRoster}"
+        Route="RemoveStudentFromRoster" />
+    <ShellContent
+        Title="AddModuleToCcourse"
+        ContentTemplate="{DataTemplate local2:AddModuleToCourse}"
+        Route="AddModuleToCourse" />
+    <ShellContent
+        Title="AddAssignmentToCourse"
+        ContentTemplate="{DataTemplate local2:AddAssignmentToCourse}"
+        Route="AddAssignmentToCourse" />
+
 
 
 </Shell>
