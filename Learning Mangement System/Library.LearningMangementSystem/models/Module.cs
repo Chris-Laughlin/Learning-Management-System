@@ -22,9 +22,9 @@ namespace Library.LearningMangementSystem.models
         {
             var content = new ContentItem()
             {
-                Name = "",
-                Description = "",
-                Path = "",
+                Name = "Test Name",
+                Description = "Test Description",
+                Path = "Test Path",
             };
             Content.Add(content);
         }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.learningManagement.Views.CourseInformation"
+             Title="CourseInformation">
+    <VerticalStackLayout Spacing="10">
+        <!-- Course Details -->
+        <Label Text="Course Information" FontSize="Large" />
+
+        <!-- Modules Section -->
+        <Label Text="Modules" FontSize="Medium" />
+        <ListView ItemsSource="{Binding Modules}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="10,5">
+                            <Label Text="{Binding Name}" FontSize="Small" />
+                            <Label Text="{Binding Descrition}" FontSize="10" />
+                            <!-- Other module details -->
+                            <ListView ItemsSource="{Binding Content}">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <StackLayout Margin="10,5">
+                                                <Label Text="{Binding Name}" FontSize="Small" />
+                                                <Label Text="{Binding Description}" FontSize="Micro" />
+                                                <!-- Other content details -->
+                                            </StackLayout>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <!-- Divider -->
+        <BoxView HeightRequest="1" BackgroundColor="LightGray" Margin="0,10,0,10" />
+
+        <!-- Assignments Section -->
+        <Label Text="Assignments" FontSize="Medium" />
+        <ListView ItemsSource="{Binding Assignments}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Margin="10,5">
+                            <Label Text="{Binding Name}" FontSize="Small" />
+                            <Label FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Description: " />
+                                        <Span Text="{Binding Description}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Total Available Points: " />
+                                        <Span Text="{Binding TotalAvailablePoints}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <Label FontSize="14">
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Due Date: " />
+                                        <Span Text="{Binding DueDate}" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                            <!-- Other assignment details -->
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button
+            Text="Submit Assignment"
+            Clicked="SubmitAssignmentClicked"/>
+
+        <Button
+        Text="Back"
+        Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

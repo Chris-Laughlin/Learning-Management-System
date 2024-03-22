@@ -76,6 +76,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Vi
 build_metadata.AdditionalFiles.TargetPath = Views\AddStudentToCourse.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AddStudentToCourse.xaml
 
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/ChooseCourse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.ChooseCourse.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ChooseCourse.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ChooseCourse.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/ChooseStudent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.ChooseStudent.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ChooseStudent.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ChooseStudent.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/CourseInformation.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.CourseInformation.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CourseInformation.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CourseInformation.xaml
+
 [C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/InstructorView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.InstructorView.xaml
@@ -88,8 +106,38 @@ build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Vi
 build_metadata.AdditionalFiles.TargetPath = Views\RemoveStudentFromRoster.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\RemoveStudentFromRoster.xaml
 
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/SearchForCourse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.SearchForCourse.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SearchForCourse.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SearchForCourse.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/SearchForStudent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.SearchForStudent.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SearchForStudent.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SearchForStudent.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/StudentCourse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.StudentCourse.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\StudentCourse.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\StudentCourse.xaml
+
 [C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/StudentView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.StudentView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\StudentView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\StudentView.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/UpdateCourse.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.UpdateCourse.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UpdateCourse.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UpdateCourse.xaml
+
+[C:/Users/200795065/Desktop/Canvas/Learning-Management-System/Learning Mangement System/MAUI.learningManagement/Views/UpdateStudent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MAUI.learningManagement.Views.UpdateStudent.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\UpdateStudent.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\UpdateStudent.xaml

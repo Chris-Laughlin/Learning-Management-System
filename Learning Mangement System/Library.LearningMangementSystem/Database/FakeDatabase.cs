@@ -26,5 +26,9 @@ namespace Library.LearningMangementSystem.Database
                 return courses;
             }
         }
+
+        public static Person theSelectedPerson;
+
+        public static Course theSelectedCourse;
     }
 }

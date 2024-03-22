@@ -18,11 +18,11 @@ namespace Library.LearningMangementSystem.Services
                 return new StudentService();
             }
         }
-        public IEnumerable<Person> students
+        public IEnumerable<Person?> students
         {
             get
             {
-                return FakeDatabase.Students;
+                return FakeDatabase.Students.Where(p => p is Person).Select(p => p as Person);
             }
         }
         public void createStudent(string studentName, string studentClassification)
@@ -51,25 +51,27 @@ namespace Library.LearningMangementSystem.Services
             Debug.WriteLine("");
         }
 
-        public void updateStudentInfo(string studentName, string studentClassification)
+        public void updateStudentInfo(Person person, string studentName, string studentClassification)
         {
-            listAllStudents();
-            if (FakeDatabase.Students.Count < 0)
+            if (FakeDatabase.Students.Count == 0)
             {
                 return;
             }
-            Console.WriteLine("Enter student Number: ");
-            var studentNum = int.Parse(Console.ReadLine());
-            if (studentNum < 0 || studentNum > FakeDatabase.Students.Count)
+
+            for (int i = 0; i < FakeDatabase.Students.Count; i++)
             {
-                Console.WriteLine("Invalid student.");
+                if (FakeDatabase.Students[i].Name == person.Name)
+                {
+                    FakeDatabase.Students[i].Name = studentName;
+                    FakeDatabase.Students[i].Classification = studentClassification;
+                    return; // Exit the loop after updating the student
+                }
             }
-            else
-            {
-                FakeDatabase.Students[studentNum - 1].Name = studentName;
-                FakeDatabase.Students[studentNum - 1].Classification = studentClassification;
-            }
+
+            Debug.WriteLine("No student found with the given name.");
         }
+
+
         public void searchStudent()
         {
             Console.WriteLine("Enter Students Name: ");
@@ -85,6 +87,11 @@ namespace Library.LearningMangementSystem.Services
                 }
             }
             Console.WriteLine("Student Not found");
+        }
+
+        public void submitAssignment(Person studentName)
+        {
+            Debug.WriteLine("Assignment Submitted Successfully!!!");
         }
 
         public Person getStudent(string name)

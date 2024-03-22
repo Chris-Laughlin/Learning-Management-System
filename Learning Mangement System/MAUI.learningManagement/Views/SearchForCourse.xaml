@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.learningManagement.Views.SearchForCourse"
+             Title="SearchForCourse">
+    <VerticalStackLayout>
+        <Label 
+            Text="Search For Courses"
+            FontSize="20"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <SearchBar Text="{Binding Query, Mode=TwoWay}"></SearchBar>
+        <Label 
+            Text="Courses"
+            FontSize="18"
+            Margin="0,10,0,0"/>
+
+        <ListView ItemsSource="{Binding Course}">
+
+        </ListView>
+
+        <Button
+            Text = "Back"
+            Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

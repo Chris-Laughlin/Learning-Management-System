@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI.learningManagement.Views.ChooseStudent"
+             Title="ChooseStudent">
+    <VerticalStackLayout Spacing="10">
+        <Label 
+            Text="Choose Student you want to modify"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+        Text="Students"
+        FontSize="18"
+        Margin="0,10,0,0"/>
+
+        <ListView ItemsSource="{Binding Student}"
+      SelectedItem="{Binding SelectedPerson, Mode=TwoWay}">
+        </ListView>
+
+        <Button
+            Text="Update Student"
+            Clicked="ModifyStudentClicked"/>
+
+        <Button
+        Text="Back"
+        Clicked="BackClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

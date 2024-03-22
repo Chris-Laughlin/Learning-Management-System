@@ -37,6 +37,20 @@
             Clicked="AddAssignmentClicked"/>
 
         <Button
+            Text="Search For Students"
+            Clicked="SearchForStudents"/>
+        <Button
+            Text="Search For Courses"
+            Clicked="SearchForCourses"/>
+
+        <Button
+            Text="Modify Courses"
+            Clicked="ChooseCourse"/>
+        <Button
+            Text="Modify Students"
+            Clicked="ChooseStudent"/>
+
+        <Button
             Text="Back"
             Clicked="BackClicked"/>
     </VerticalStackLayout>

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace MAUI.learningManagement.ViewModels
 {
-    public class AddStudentToCourseViewModel
+    public class AddStudentToCourseViewModel: INotifyPropertyChanged
     {
         public ObservableCollection<Person> Student
         {
@@ -33,7 +33,7 @@ namespace MAUI.learningManagement.ViewModels
             }
         }
 
-        public event PropertyChangedEventHandler ?PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
         {
@@ -56,7 +56,6 @@ namespace MAUI.learningManagement.ViewModels
 
         public void RefreshView()
         {
-            Debug.WriteLine("Refreshing Add Student");
             NotifyPropertyChanged(nameof(Student));
             NotifyPropertyChanged(nameof(Course));
         }

@@ -3,11 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI.learningManagement.Views.StudentView"
              Title="StudentView">
-    <VerticalStackLayout>
+    <VerticalStackLayout Spacing="30">
         <Label 
             Text="StudentView"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Label 
+            Text="Students"
+            FontSize="18"
+            Margin="0,10,0,0"/>
+        <ListView ItemsSource="{Binding Student}"
+            SelectedItem="{Binding SelectedPerson, Mode=TwoWay}">
+        </ListView>
+
+        <Button
+            Text="View Student Courses"
+            Clicked="ViewStudentClicked"/>
 
         <Button
             Text="Back"

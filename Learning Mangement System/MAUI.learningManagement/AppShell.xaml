@@ -49,6 +49,42 @@
         Title="AddAssignmentToCourse"
         ContentTemplate="{DataTemplate local2:AddAssignmentToCourse}"
         Route="AddAssignmentToCourse" />
+    <ShellContent
+        Title="SearchForStudent"
+        ContentTemplate="{DataTemplate local2:SearchForStudent}"
+        Route="SearchForStudent" />
+    <ShellContent
+        Title="SearchForCourse"
+        ContentTemplate="{DataTemplate local2:SearchForCourse}"
+        Route="SearchForCourse" />
+
+    <ShellContent
+        Title="StudentCourses"
+        ContentTemplate="{DataTemplate local2:StudentCourse}"
+        Route="StudentCourses" />
+
+    <ShellContent
+        Title="CourseInformation"
+        ContentTemplate="{DataTemplate local2:CourseInformation}"
+        Route="CourseInformation" />
+
+    <ShellContent
+        Title="ChooseCourse"
+        ContentTemplate="{DataTemplate local2:ChooseCourse}"
+        Route="ChooseCourse" />
+    <ShellContent
+        Title="UpdateCourse"
+        ContentTemplate="{DataTemplate local2:UpdateCourse}"
+        Route="UpdateCourse" />
+
+    <ShellContent
+        Title="ChooseStudent"
+        ContentTemplate="{DataTemplate local2:ChooseStudent}"
+        Route="ChooseStudent" />
+    <ShellContent
+        Title="UpdateStudent"
+        ContentTemplate="{DataTemplate local2:UpdateStudent}"
+        Route="UpdateStudent" />
 
 
 

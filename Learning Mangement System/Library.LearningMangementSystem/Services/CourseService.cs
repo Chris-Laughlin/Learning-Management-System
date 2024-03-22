@@ -26,6 +26,20 @@ namespace Library.LearningMangementSystem.Services
                 return FakeDatabase.Courses;
             }
         }
+        public IEnumerable<Module> Modules
+        {
+            get
+            {
+                return FakeDatabase.theSelectedCourse.Modules;
+            }
+        }
+        public IEnumerable<Assignment> Assignments
+        {
+            get
+            {
+                return FakeDatabase.theSelectedCourse.Assignments;
+            }
+        }
         public void CreateCourse( string courseName, string courseCode, string courseDescription)
         {
             var myCourse = new Course()
@@ -55,36 +69,25 @@ namespace Library.LearningMangementSystem.Services
             Debug.WriteLine("");
         }
 
-        public void updateCourseInfo()
+        public void updateCourseInfo(Course course, string courseCode, string courseName, string courseDescription)
         {
-            listAllCourses();
-            if (FakeDatabase.Courses.Count < 0)
+            for (int i = 0; i < FakeDatabase.Courses.Count; i++)
             {
-                return;
-            }
-            Console.WriteLine("Enter Course number: ");
-            var courseNum = Console.ReadLine();
-            if (int.Parse(courseNum) > courses.Count() || int.Parse(courseNum) < 1)
-            {
-                Console.WriteLine("Invalid Number");
-            }
-            else
-            {
-                Console.WriteLine("Enter Course Code: ");
-                var courseCode = Console.ReadLine();
-                Console.WriteLine("Enter Course Name: ");
-                var courseName = Console.ReadLine();
-                Console.WriteLine("Enter Course Description: ");
-                var courseDescription = Console.ReadLine();
+                if (FakeDatabase.Courses[i].Name == course.Name &&
+                    FakeDatabase.Courses[i].Code == course.Code &&
+                    FakeDatabase.Courses[i].Description == course.Description)
+                {
+                    // Update the course information
+                    FakeDatabase.Courses[i].Code = courseCode;
+                    FakeDatabase.Courses[i].Name = courseName;
+                    FakeDatabase.Courses[i].Description = courseDescription;
 
-                FakeDatabase.Courses[int.Parse(courseNum) - 1].Code = courseCode;
-                FakeDatabase.Courses[int.Parse(courseNum) - 1].Name = courseName;
-                FakeDatabase.Courses[int.Parse(courseNum) - 1].Description = courseDescription;
-
-                Console.WriteLine("Course Succesfully updated!");
+                    // Optional: You may want to break out of the loop if the course is found
+                    break;
+                }
             }
-
         }
+
 
         public void findCourse()
         {
@@ -235,7 +238,6 @@ namespace Library.LearningMangementSystem.Services
                     Debug.WriteLine($"Adding module '{moduleName}' to course '{courseName.Name}' with description '{moduleDescription}'");
 
                     FakeDatabase.Courses[i].Modules.Add(module);
-                    FakeDatabase.Courses[i].Modules[i].addNewContent();
 
                     // Print all modules in the course
                     Debug.WriteLine($"Modules in course '{courseName.Name}':");
@@ -249,6 +251,45 @@ namespace Library.LearningMangementSystem.Services
 
             // Print error message if no course is found
             Debug.WriteLine("No Course Found.");
+        }
+
+        public List<Module> getModules(Course theCourse)
+        {
+            var temp = new List<Module>();
+            for (int i = 0; i < FakeDatabase.Courses.Count; i++)
+            {
+                var course = FakeDatabase.Courses[i];
+                if (course.Name == theCourse.Name)
+                {
+                    for (int j = 0; j < course.Modules.Count; j++)
+                    {
+                        var module = course.Modules[j];
+                        module.addNewContent();
+                        temp.Add(module);
+                        Debug.WriteLine("Adding Module " + module.Name);
+                    }
+                }
+            }
+            return temp;
+        }
+
+        public List<Assignment> getAssignments(Course theCourse)
+        {
+            var temp = new List<Assignment>();
+            for (int i = 0; i < FakeDatabase.Courses.Count; i++)
+            {
+                var course = FakeDatabase.Courses[i];
+                if (course.Name == theCourse.Name)
+                {
+                    for (int j = 0; j < course.Assignments.Count; j++)
+                    {
+                        var assignment = course.Assignments[j];
+                        temp.Add(assignment);
+                        Debug.WriteLine("Adding Assignment " + assignment.Name);
+                    }
+                }
+            }
+            return temp;
         }
 
     }

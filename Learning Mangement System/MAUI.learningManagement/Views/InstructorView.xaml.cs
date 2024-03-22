@@ -44,6 +44,22 @@ namespace MAUI.learningManagement.Views
         {
             Shell.Current.GoToAsync("//AddAssignmentToCourse");
         }
+        private void SearchForStudents(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("//SearchForStudent");
+        }
+        private void SearchForCourses(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("//SearchForCourse");
+        }
+        private void ChooseCourse(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("//ChooseCourse");
+        }
+        private void ChooseStudent(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("//ChooseStudent");
+        }
 
         private void ContentPage_NavigateTo(object sender, NavigationEventArgs e)
         {
